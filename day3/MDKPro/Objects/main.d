@@ -30,4 +30,11 @@
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h \
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
-  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
+  RTE\Device\STM32H743VITx\STCubeGenerated\Inc\gpio.h \
+  RTE\Device\STM32H743VITx\STCubeGenerated\Inc\main.h \
+  RTE\_Target_1\RTE_Components.h \
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.6.1\Include\EventRecorder.h \
+  RTE\Compiler\EventRecorderConf.h

@@ -1,5 +1,5 @@
 ./objects/stm32h7xx_hal_msp.o: \
-  C:\Users\sdsha\Desktop\ProDay1\MDKPro\RTE\Device\STM32H743VITx\STCubeGenerated\Src\stm32h7xx_hal_msp.c \
+  E:\Documents\Work\DJIPowerUp\day3\MDKPro\RTE\Device\STM32H743VITx\STCubeGenerated\Src\stm32h7xx_hal_msp.c \
   RTE\Device\STM32H743VITx\STCubeGenerated\Inc\main.h \
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   RTE\Device\STM32H743VITx\STCubeGenerated\Inc\stm32h7xx_hal_conf.h \
@@ -31,4 +31,6 @@
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h \
   C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
-  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h
