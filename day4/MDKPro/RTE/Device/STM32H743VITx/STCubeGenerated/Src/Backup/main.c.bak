@@ -40,7 +40,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "dma.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -49,7 +48,6 @@
 #include "RTE_Components.h"
 #include "EventRecorder.h"
 #include "EventRecorderConf.h"
-#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,15 +80,7 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t RecBuf[20] = {0};
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-	if(huart == &huart1)
-	{
-		SCB_InvalidateDCache_by_Addr((uint32_t *)RecBuf, 20);
-		HAL_UART_Transmit(&huart1,RecBuf,strlen((char *)RecBuf),HAL_MAX_DELAY);
-	}
-}
+
 /* USER CODE END 0 */
 
 /**
@@ -130,7 +120,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	/* 初始化 EventRecorder 并开启 */ 
@@ -143,8 +132,7 @@ int main(void)
 	EventStartA(0); 
 	printf("SystemCoreClock:%d\r\n",SystemCoreClock);
 	EventStopA(0); 
-	HAL_UART_Transmit(&huart1,(uint8_t *)"Helloworld",11,HAL_MAX_DELAY);
-	HAL_UART_Receive_DMA(&huart1,(uint8_t *)RecBuf,10);
+	HAL_UART_Transmit(&huart1,"Helloworld",11,HAL_MAX_DELAY);
   while (1)
   {
     /* USER CODE END WHILE */

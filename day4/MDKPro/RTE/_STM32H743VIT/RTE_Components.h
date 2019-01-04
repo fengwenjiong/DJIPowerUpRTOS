@@ -4,7 +4,7 @@
  *      *** Do not modify ! ***
  *
  * Project: 'H743Pro' 
- * Target:  'Target 1' 
+ * Target:  'STM32H743VIT' 
  */
 
 #ifndef RTE_COMPONENTS_H
@@ -38,6 +38,8 @@
 #define RTE_DEVICE_HAL_RCC
 /*  Keil::Device:STM32Cube HAL:TIM:1.3.0 */
 #define RTE_DEVICE_HAL_TIM
+/*  Keil::Device:STM32Cube HAL:UART:1.3.0 */
+#define RTE_DEVICE_HAL_UART
 /*  Keil::Device:Startup:1.2.0 */
 #define RTE_DEVICE_STARTUP_STM32H7XX    /* Device Startup for STM32H7 */
 
