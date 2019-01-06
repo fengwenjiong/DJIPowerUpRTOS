@@ -82,7 +82,7 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t RecBuf[20] = {0};
+__attribute__((section (".RAM_AXIM"))) uint8_t RecBuf[20] = {0};
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart == &huart1)
