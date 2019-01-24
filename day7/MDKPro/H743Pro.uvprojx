@@ -3100,7 +3100,7 @@
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.4.0"/>
         <targetInfos>
           <targetInfo name="STM32H743VIT"/>
-          <targetInfo excluded="1" name="STM32H743VITCubeMX"/>
+          <targetInfo excluded="1" name="STM32H743VITCubeMX" versionMatchMode=""/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil" Cversion="1.4.0" condition="Cortex-M Device">

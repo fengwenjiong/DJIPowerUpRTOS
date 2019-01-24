@@ -4,6 +4,20 @@
 #define WIFI_STR "[WIFI]"
 static rw_DriverParams_t WIFIDriver = {0};
 /*************************************************
+*** Function: WIFI模块控制
+*************************************************/
+static void Board_WIFI_PowerSet(uint8_t status)
+{    
+  if (status) 
+	{
+		HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port,WIFI_RESET_Pin,GPIO_PIN_SET);
+  } 
+	else 
+	{
+		HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port,WIFI_RESET_Pin,GPIO_PIN_RESET);
+  }
+}
+/*************************************************
 *** Function: 初始化WIFIIO接口
 *************************************************/
 static uint32_t Board_WIFI_InterfaceInit(void)
@@ -27,12 +41,13 @@ static uint32_t Board_WIFI_InterfaceInit(void)
   HAL_GPIO_Init(WIFI_RESET_GPIO_Port, &GPIO_InitStruct);
 	
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(WIFI_CS_GPIO_Port, WIFI_CS_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(WIFI_CS_GPIO_Port, WIFI_CS_Pin, GPIO_PIN_RESET);
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port, WIFI_RESET_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port, WIFI_RESET_Pin, GPIO_PIN_RESET);
+	osDelay(200);
+	
 	
 	__HAL_RCC_GPIOD_CLK_ENABLE();
-
   /*Configure GPIO pin : PtPin */
   /* EXTI interrupt init*/
   GPIO_InitStruct.Pin = GPIO_PIN_4;
@@ -50,21 +65,6 @@ static uint32_t Board_WIFI_InterfaceInit(void)
 static uint32_t Board_WIFI_InterfaceDeInit(void)
 {
 	return 0;
-}
-/*************************************************
-*** Function: WIFI模块控制
-*************************************************/
-static void Board_WIFI_PowerSet(uint8_t status)
-{    
-  if (status) 
-	{
-		HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port,WIFI_RESET_Pin,GPIO_PIN_SET);
-  } 
-	else 
-	{
-		HAL_GPIO_WritePin(WIFI_RESET_GPIO_Port,WIFI_RESET_Pin,GPIO_PIN_RESET);
-		RTE_RoundRobin_DelayMS(200);
-  }
 }
 /*************************************************
 *** Function: WIFI模块 SPI传输接口

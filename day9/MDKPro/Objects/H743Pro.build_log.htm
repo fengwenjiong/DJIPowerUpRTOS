@@ -1,0 +1,180 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.0.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sd sdshanlei@outlook.com, sd, LIC=BL28T-RYCQZ-F1GPT-R5D8C-NY0SI-A0V5H
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.27.0.0
+Toolchain Path:  C:\UserProfession\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.11
+Assembler:       Armasm.exe V6.11
+Linker/Locator:  ArmLink.exe V6.11
+Library Manager: ArmAr.exe V6.11
+Hex Converter:   FromElf.exe V6.11
+CPU DLL:         SARMCM3.DLL V5.27.0.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\sdsha\OneDrive\Documents\Work\DJIPowerUp\day9\MDKPro\H743Pro.uvprojx
+Project File Date:  01/23/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.11', folder: 'C:\UserProfession\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32H743VIT'
+compiling Thread_GUI.c...
+compiling Board_FatFS.c...
+linking...
+.\H743Pro.sct(17): warning: L6314W: No section matches pattern *(.RAM_DTCM).
+.\H743Pro.sct(20): warning: L6314W: No section matches pattern *(.RAM_AXIM).
+.\H743Pro.sct(29): warning: L6314W: No section matches pattern *(.RAM_JPEGBUFFER).
+.\H743Pro.sct(33): warning: L6314W: No section matches pattern *(.RAM_FBALLOC).
+Program Size: Code=240756 RO-data=61520 RW-data=264536 ZI-data=26376  
+Finished: 0 information, 4 warning and 0 error messages.
+".\Objects\H743Pro.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.1.2
+   * Component: Keil RTX5 Variant: Library Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.1.pack
+                Keil.ARM_Compiler.1.6.1
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: Event Recorder Variant: DAP Version: 1.4.0
+   * Component: STDOUT Variant: EVR Version: 1.2.0
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil.FrameworkCubeMX.1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.2.2.0.pack
+                Keil.STM32H7xx_DFP.2.2.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+   * Component: STM32Cube Framework Version: 1.1.0
+   * Component: Common Version: 1.3.0
+   * Component: Cortex Version: 1.3.0
+   * Component: DMA Version: 1.3.0
+   * Component: GPIO Version: 1.3.0
+   * Component: PWR Version: 1.3.0
+   * Component: RCC Version: 1.3.0
+   * Component: SD Version: 1.3.0
+   * Component: SPI Version: 1.3.0
+   * Component: TIM Version: 1.3.0
+   * Component: UART Version: 1.3.0
+   * Component: Startup Version: 1.2.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\CMSIS
+  .\RTE\Compiler
+  .\RTE\Device\STM32H743VITx
+  .\RTE\Device\STM32H743VITx\Drivers\STM32H7xx_HAL_Driver\Inc
+  .\RTE\Device\STM32H743VITx\STCubeGenerated\Inc
+  .\RTE\_STM32H743VIT
+  C:\UserProfession\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\UserProfession\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Include
+  C:\UserProfession\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.6.1\Include
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+  C:\UserProfession\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\2.2.0\Drivers\STM32H7xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ::Device:STM32Cube Framework:1.1.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.4.0
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
+
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
+      Include file:  Config\EventRecorderConf.h
+      Source file:   Source\EventRecorder.c
+      Include file:  Include\EventRecorder.h
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:EVR:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.0.0
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated\Src\stm32h7xx_hal_msp.c
+      Include file:  STCubeGenerated\Inc\stm32h7xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.3.0
+      Include file:  Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:SD:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c
+
+   * Component: Keil::Device:STM32Cube HAL:UART:1.3.0
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c
+      Source file:   Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c
+
+   * Component: Keil::Device:Startup:1.2.0
+      Source file:   Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\arm\startup_stm32h743xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c
+      Include file:  Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>
