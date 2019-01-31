@@ -11,7 +11,7 @@ const osThreadAttr_t GUIThreadControl = {
 };
 __NO_RETURN void ThreadTaskGUI (void *argument) {
 	RTE_RoundRobin_CreateGroup("GUIGroup");
-	Board_FatFS_Init();
+//	Board_FatFS_Init();
 	Board_LCD_Init();
 	lv_init();
 	lv_disp_drv_t disp_drv;

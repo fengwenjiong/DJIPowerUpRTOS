@@ -13,6 +13,7 @@
 #include "Board_SPI.h"
 #include "Board_LCD.h"
 #include "Board_SDCard.h"
+#include "freetype.h"
 #if RTE_USE_OS == 0
 static void LEDTimer_Callback(void* UserParameters) {
 	EventStopA(0); 

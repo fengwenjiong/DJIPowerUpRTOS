@@ -137,5 +137,8 @@
   ..\SL_RTE\RTE_Board\TuringBoard\Board_MSPInit.h \
   ..\SL_RTE\RTE_Board\TuringBoard\Board_SPI.h \
   ..\SL_RTE\RTE_Board\TuringBoard\Board_LCD.h \
-  ..\SL_RTE\RTE_Board\TuringBoard\Board_SDCard.h \
+  ..\SL_RTE\RTE_Board\TuringBoard\Board_SDCard.h ..\APP_GUI\freetype.h \
+  C:\UserProfession\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
+  C:\UserProfession\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\UserProfession\Keil_v5\ARM\ARMCLANG\Bin\..\include\setjmp.h \
   ..\Thread_All\Thread_System.h
